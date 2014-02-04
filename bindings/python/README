@@ -1,4 +1,13 @@
-1. To install Python binding on *nix, simply run below command:
+1. Requirements
+
+	For using cython you have to install the header files and a static library for Python
+	
+	E.g. using ubuntu:
+	
+		$ sudo apt-get install python-dev
+
+
+2. To install Python binding on *nix, simply run below command:
 
 		$ sudo make install
 
@@ -11,7 +20,18 @@
 
 		$ sudo pip install cython
 	or:
-		$ sudo pip install cython
+		$ sudo easy_install cython
+		
+	Depending on your distribution you might also install cython using your repository.
+	E.g. using ubuntu:
+	
+		$ sudo apt-get install cython
+		
+	NOTE: Verify to use the current version
+	
+		& apt-cache policy cython
+	
+	Which should at least print version 0.19
 
 
 This directory contains some test code to show how to use Capstone API.
@@ -31,7 +51,7 @@ This directory contains some test code to show how to use Capstone API.
   architecture.
 
 
-2. To install Python binding on Windows:
+3. To install Python binding on Windows:
 
 Recommended method:
 
